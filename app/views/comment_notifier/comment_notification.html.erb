@@ -1,0 +1,9 @@
+At <%= Time.now %> <%= h @comment.author %> (<%= h @comment.author_email %>) posted the following comment for the entry "<%= h @comment.article.title %>":
+
+"<%= h @comment.body %>"
+
+The commenter's IP address was <%= h @comment.author_ip %>.
+
+---
+This notification was sent using the Mephisto Comment notification plugin by Luke Redpath.
+svn://lukeredpath.co.uk/var/svn/plugins/mephisto_comment_notification/trunk
